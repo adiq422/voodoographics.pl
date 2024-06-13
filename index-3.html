@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/superfish.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ui.totop.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.hoverIntent.minified.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/jquery.twitter.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('.slider')._TMS({
+              show:0,
+              pauseOnHover:false,
+              prevBu:'.prev',
+              nextBu:'.next',
+              playBu:false,
+              duration:9000,
+              preset:'zoomer',
+              pagination:true,//'.pagination',true,'<ul></ul>'
+              pagNums:false,
+              slideshow:7000,
+              numStatus:false,
+              banners:false,
+              waitBannerAnimation:false,
+              progressBar:false
+          })
+        })
+         $(window).load(function(){
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <!--[if lt IE 8]>
+       <div style='clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: black;
+            color: white;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Filmik będzie wyżej niż tło, ale niżej niż treść */
+            overflow: hidden;
+        }
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            position: relative;
+            z-index: 1; /* Treść strony będzie wyżej niż filmik */
+            color: white;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-background">
+    <video autoplay loop muted playsinline>
+        <source src="images/video.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="content">
+    <!-- Twoja treść tutaj -->
+</div>
+<div class="main" id="top" style="background-color: transparent;">
+
+     <div class="light-main-page" style="background-color: transparent;">
+     <div class="head" style="background-color: transparent;">
+         <div class="main-header" style="background-color: transparent;">
+             <header>
+               <div class="nav-logo" style="background-color: transparent;">
+                   <div class="logo">
+                         <h1><a href="index.html" style="color: transparent;">Logo</a></h1>
+                   </div>
+                   <nav>
+                     <ul class="sf-menu" style="background-color: transparent;">
+                         <li class="current"><a href="index.html" style="color: white;">O Mnie</a></li>
+                         <ul style="background-color: transparent;">
+                              <li><a href="#" style="color: white;">FAQS</a></li>
+                              <li><a href="#" style="color: white;">testimonials</a></li>
+                          </ul>
+                          <li><a href="index-3.html" style="color: white;">Portfolio</a></li>
+                          <li id="last-li"><a href="index-4.html" style="color: white;">Kontakt</a></li>
+                      </ul>
+                      <div class="clear"></div>
+                    </nav>
+                 <div class="clear"></div>
+               </div>
+             </header>
+         </div>
+      </div>
+
+		<!--==============================content================================-->
+<section id="content">
+	 <div class="container_12">
+	     <div class="wrapper">
+		    <div class="grid_12">
+                <h2 class="padd-3-1">Portfolio:</h2>
+            </div>
+            <div class="grid_4">
+            	<a class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Chabrowe Ogrody Logo</a>
+            	<span class="top-1-1 dis-block">10 Marzec, 2023</span>
+            	<p class="top-2 bot-5">Chabrowe Ogrody symbolizują nie tylko naturalne piękno, ale także zrównoważony rozwój i ekologiczne podejście. Projektując to logo, chciałem uchwycić esencję spokoju i harmonii, którą przynoszą kwitnące ogrody.</p>
+            </div>
+            <div class="grid_4">
+            	<a  class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img-1.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Logo Mokajo Twój Ogród</a>
+            	<span class="top-1-1 dis-block">16 Lipiec, 2022</span>
+            	<p class="top-2 bot-5">Projektując to logo, zależało mi na uchwyceniu ducha "Mokajo Twój Ogród" - miejsca, gdzie każdy element przestrzeni ogrodowej jest przemyślany i pielęgnowany z najwyższą starannością. Drzewo bonsai, z jego delikatnymi, misternie uformowanymi gałęziami, jest idealnym symbolem tej filozofii.</p>
+            </div>
+            <div class="grid_4">
+            	<a   class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img-2.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Logo OffUniverse</a>
+            	<span class="top-1-1 dis-block">1 Styczeń, 2023</span>
+            	<p class="top-2 bot-5">Projektując to logo, skupiłem się na uchwyceniu dynamizmu i nowoczesności, które są fundamentem marki "OFFUNIVERSE". Napis na planecie symbolizuje centralną rolę marki w kształtowaniu trendów i byciu przewodnikiem w kosmicznej podróży po świecie mody.</p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+            	<a   class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img-3.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Folie Na Szyby Igiełka</a>
+            	<span class="top-1-1 dis-block"> 28 Sierpień, 2023</span>
+            	<p class="top-2 bot-5">Projektując witrynę zakładu, zależało nam na uchwyceniu ducha "Igielka" – miejsca, gdzie precyzja i pasja do krawiectwa spotykają się, tworząc perfekcyjne kreacje. </p>
+            </div>
+            <div class="grid_4">
+            	<a   class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img-4.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Folie Na Szyby Igiełka</a>
+            	<span class="top-1-1 dis-block">28 Sierpień, 2023</span>
+            	<p class="top-2 bot-5">Tworząc usługi krawieckie, skupilłem się na połączeniu tradycji z nowoczesnością, dbając o każdy szczegół. "Igielka" to miejsce, gdzie Twoje ubrania zyskują nowe życie dzięki precyzyjnej ręce mistrza krawiectwa.</p>
+            </div>
+            <div class="grid_4">
+            	<a   class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img-5.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Folie Na Szyby Igiełka</a>
+            	<span class="top-1-1 dis-block">28 Sierpień, 2023</span>
+            	<p class="top-2 bot-5">Projektując przestrzeń "Igielki", chciałem oddać esencję krawieckiej sztuki – miejsca, gdzie każdy projekt jest przemyślany i wykonany z najwyższą starannością. </p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4">
+            	<a   class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img-6.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Dreams</a>
+            	<span class="top-1-1 dis-block">14 Grudzień, 2019</span>
+            	<p class="top-2">Projektując tę grafikę, zależało mi na uchwyceniu tajemniczości i potencjału nowego świata, który czeka za trójkątnym portalem. Gość stojący przed portalem symbolizuje odwagę i ciekawość, niezbędne do eksploracji nieznanych terenów i odkrywania nowych możliwości. Trójkątny portal jest metaforą przejścia między tym, co znane, a tym, co dopiero przed nami, łącząc elementy mistycyzmu z nowoczesnym designem.</p>
+            </div>
+            <div class="grid_4">
+            	<a   class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img-7.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Galaxy</a>
+            	<span class="top-1-1 dis-block">10 Marzec, 2020</span>
+            	<p class="top-2">Projektując tę grafikę, zależało mi na uchwyceniu esencji wolności i nieskończonych możliwości, które symbolizuje kosmos. Kobieta, która rozkłada ręce w bezkresnej przestrzeni, reprezentuje odwagę, marzenia i dążenie do przekraczania granic. Jej otwarta postawa odzwierciedla gotowość do przyjęcia wszystkiego, co wszechświat ma do zaoferowania, symbolizując jedność z kosmiczną energią i potencjałem.</p>
+            </div>
+            <div class="grid_4">
+            	<a   class="lightbox-image bot-4" data-gal="prettyPhoto[1]"><img src="images/page-3-img-8.jpg" alt=""></a>
+            	<a href="" class="bold col hov" style="color: white;">Portal</a>
+            	<span class="top-1-1 dis-block">Maj 5, 2018</span>
+            	<p class="top-2">Projektując tę grafikę, zależało mi na uchwyceniu momentu pełnego napięcia i oczekiwania, gdy gość staje na progu nieznanego. Widok od tyłu pozwala widzowi utożsamić się z postacią, czując jej determinację i niepewność, gdy zbliża się do tajemniczego portalu. Portal, lśniący w oddali, symbolizuje nowe możliwości i niewiadome, które czekają po drugiej stronie</p>
+            </div>
+            <div class="clear"></div>
+	     </div><!--the end of wrapper-->
+	  </div>
+  </div>
+</section>
+	<!--==============================footer=================================-->
+  <footer style="background-color: transparent;">
+  <div class="main-content" style="background-color: transparent;">
+
+
+
+  <p style="font-size: 18px; color: white;">ᅠ
+  <div class="fleft dis-inblock" style="background-color: transparent;">
+                    <p style="color: white;">Voodoo Graphics &copy; 2024&nbsp;&nbsp;ᅠᅠᅠ|&nbsp;&nbsp;<a href="index-5.html" style="color: white;"></a> <br><!--{%FOOTER_LINK} --></p>
+                </div>
+                <div class="icons" style="background-color: transparent;">
+                    <a href="https://www.instagram.com/voodoographics" class="icon"></a>
+                     <a href="https://www.facebook.com/voodographics" class="icon-1"></a>
+                      <a href="https://mail.google.com/mail/u/1/#inbox?compose=jrjtXFBHpnVkBspPlzKtXFRtHHLxMLtfGtmfsNxDpHpDdxlSFKKnGTrkjNTlpxCcnvShxdPB" class="icon-2"></a>
+                </div>
+                 <div class="clear"></div>
+            </div>
+       </div>
+   </div>
+  </footer>
+  </div>
+  </div>
+  </body>
+  </html>
